@@ -1,0 +1,19 @@
+[debug] [2026-01-21T05:39:27.701Z] ----------------------------------------------------------------------
+[debug] [2026-01-21T05:39:27.703Z] Command:       C:\nvm4w\nodejs\node.exe C:\nvm4w\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2026-01-21T05:39:27.703Z] CLI Version:   15.3.1
+[debug] [2026-01-21T05:39:27.703Z] Platform:      win32
+[debug] [2026-01-21T05:39:27.703Z] Node Version:  v20.19.0
+[debug] [2026-01-21T05:39:27.703Z] Time:          Wed Jan 21 2026 11:24:27 GMT+0545 (Nepal Time)
+[debug] [2026-01-21T05:39:27.704Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\JAVA\KU LAB\Portfolio
+
