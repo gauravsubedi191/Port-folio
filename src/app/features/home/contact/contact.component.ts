@@ -1,4 +1,6 @@
 import { Component, inject } from '@angular/core';
+import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
+import { environment } from 'src/environments/environment';
 import { CommonModule } from '@angular/common';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { fadeIn } from '../../../shared/animations/animations';
@@ -81,7 +83,9 @@ import { fadeIn } from '../../../shared/animations/animations';
               @if (!isSubmitting) {
                 <span>Send Message</span>
               } @else {
-                <span>Sending...</span>
+                <span class="spinner-container">
+                   <i class="fas fa-circle-notch fa-spin"></i> Sending...
+               </span>
               }
             </button>
 
@@ -386,20 +390,38 @@ export class ContactComponent {
     return !!(control && control.invalid && control.touched);
   }
 
+  // EmailJS credentials from environment
+  private serviceID = environment.emailjs.serviceID;
+  private templateID = environment.emailjs.templateID;
+  private userID = environment.emailjs.userID;
+
   onSubmit(): void {
     if (this.contactForm.valid) {
       this.isSubmitting = true;
       this.showSuccess = false;
       this.showError = false;
 
-      // Simulate form submission (since no backend)
-      setTimeout(() => {
+      const formData = this.contactForm.value;
+      const templateParams = {
+      name: formData.name,    
+      email: formData.email,    
+      subject: formData.subject,
+      message: formData.message,
+      time: new Date().toLocaleString() 
+    };
+
+      emailjs.send(this.serviceID, this.templateID, templateParams, this.userID)
+      .then((result: EmailJSResponseStatus) => {
         this.isSubmitting = false;
         this.showSuccess = true;
         this.contactForm.reset();
         setTimeout(() => this.showSuccess = false, 5000);
-      }, 1000);
-    } else {
+      }, (error) => {
+        this.isSubmitting = false;
+        this.showError = true;
+        setTimeout(() => this.showError = false, 3000);
+      });
+  } else {
       this.showError = true;
       setTimeout(() => this.showError = false, 3000);
       Object.keys(this.contactForm.controls).forEach(key => {
