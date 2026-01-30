@@ -1,9 +1,9 @@
 import { Component, inject } from '@angular/core';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
-import { environment } from 'src/environments/environment';
 import { CommonModule } from '@angular/common';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { fadeIn } from '../../../shared/animations/animations';
+import { environment } from '../../../../environments/environment';
 
 @Component({
   selector: 'app-contact',
