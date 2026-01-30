@@ -3,7 +3,7 @@ export const environment ={
     apiUrl:'http://localhost:8080/api',
     emailjs: {
         serviceID: 'service_ososq6c',
-        templateID: 'template_ebrmw2c',
+        templateID: 'template_afsmirm',
         userID: 'CndXJiXKylqLAC7A2' 
     }
 };
