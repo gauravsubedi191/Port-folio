@@ -261,7 +261,7 @@ export class HeroComponent {
     location: 'Panauti, Nepal',
     githubUrl: 'https://github.com/gauravsubedi191',
     linkedinUrl: 'https://www.linkedin.com/in/gaurav-subedi-766885270/',
-    resumeUrl: '/assets/resume.pdf',
-    profileImageUrl: '/profile.png'
+    resumeUrl: 'assets/resume.pdf',
+    profileImageUrl: 'assets/profile.png'
   };
 }
