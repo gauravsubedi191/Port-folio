@@ -24,13 +24,6 @@ import { environment } from '../../../../environments/environment';
               </div>
             </div>
             <div class="info-item">
-              <i class="fas fa-phone"></i>
-              <div>
-                <h4>Phone</h4>
-                <span>+977-9860935437</span>
-              </div>
-            </div>
-            <div class="info-item">
               <i class="fas fa-map-marker-alt"></i>
               <div>
                 <h4>Location</h4>
