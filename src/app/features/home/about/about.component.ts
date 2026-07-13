@@ -20,10 +20,6 @@ import { fadeIn } from '../../../shared/animations/animations';
                 <span>{{ profile.email }}</span>
               </div>
               <div class="detail-item">
-                <i class="fas fa-phone"></i>
-                <span>{{ profile.phone }}</span>
-              </div>
-              <div class="detail-item">
                 <i class="fas fa-map-marker-alt"></i>
                 <span>{{ profile.location }}</span>
               </div>
@@ -147,7 +143,6 @@ export class AboutComponent {
     title: 'Full Stack Developer | AI/ML Enthusiast',
     bio: 'Result-driven developer with proven experience in Java (Spring Boot) and Angular (TypeScript) framework web development. Demonstrated ability to collaborate effectively across cross-functional teams, ensuring project alignment and maintaining clear stakeholder communication. Currently expanding technical capabilities in Python to explore AI and Machine Learning solutions. Committed to delivering high-quality work while staying ahead of emerging technologies.',
     email: 'gauravsubedi191@gmail.com',
-    phone: '+977-9860935437',
     location: 'Panauti, Nepal',
     githubUrl: 'https://github.com/gauravsubedi191',
     linkedinUrl: 'https://www.linkedin.com/in/gaurav-subedi-766885270/'
