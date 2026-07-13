@@ -661,6 +661,8 @@ interface Project {
 })
 export class ProjectsComponent implements OnInit, OnDestroy {
   projects: Project[] = [
+    
+    
     {
       id: 1,
       title: 'PEMIS - Public Enterprise Management System',
@@ -668,7 +670,7 @@ export class ProjectsComponent implements OnInit, OnDestroy {
       techStack: ['Java', 'Spring Boot', 'Angular', 'MySQL', 'REST API', 'TypeScript'],
       imageUrl: '/Emblem_of_Nepal.png',
       isFeatured: true,
-      displayOrder: 1
+      displayOrder: 2
     },
     {
       id: 2,
@@ -677,7 +679,7 @@ export class ProjectsComponent implements OnInit, OnDestroy {
       techStack: ['Java', 'Spring Boot', 'Angular', 'MySQL', 'JPA', 'Bootstrap'],
       imageUrl: '/nepal-govt.png',
       isFeatured: true,
-      displayOrder: 2
+      displayOrder: 3
     },
     {
       id: 3,
@@ -686,7 +688,7 @@ export class ProjectsComponent implements OnInit, OnDestroy {
       techStack: ['Java', 'Spring Boot', 'JSP', 'MySQL', 'Spring Security', 'REST API'],
       imageUrl: '/crud.png',
       isFeatured: true,
-      displayOrder: 3
+      displayOrder: 4
     },
     {
       id: 4,
@@ -694,10 +696,10 @@ export class ProjectsComponent implements OnInit, OnDestroy {
       description: 'Modern, responsive portfolio website using Java Spring Boot backend with JWT authentication and Angular frontend. Features admin panel for content management, contact form, project showcase with filtering, and smooth animations.',
       techStack: ['Java 21', 'Spring Boot', 'Angular 18', 'MySQL', 'Docker', 'JWT', 'Nginx'],
       imageUrl: '/portfolio.png',
-      demoUrl: 'https://gauravsubedi.com',
+      demoUrl: 'https://subedig.com.np',
       githubUrl: 'https://github.com/gauravsubedi191/portfolio',
       isFeatured: true,
-      displayOrder: 4
+      displayOrder: 5
     },
     {
       id: 5,
@@ -706,8 +708,18 @@ export class ProjectsComponent implements OnInit, OnDestroy {
       techStack: ['Java', 'Spring Boot', 'PostgreSQL', 'REST API', 'Postman'],
       imageUrl: '/java.png',
       isFeatured: false,
-      displayOrder: 5
-    }
+      displayOrder: 6
+    },
+     {
+      id: 6,
+      title: 'Fitness App',
+      description: 'An app to track the fitness routine and daily workout schedule.',
+      techStack: ['Java', 'Spring Boot', 'Angular', 'MySQL', 'REST API', 'TypeScript'],
+      imageUrl: '/java.png',
+      isFeatured: true,
+      demoUrl: 'https://fitness-b1352.web.app/',
+      displayOrder: 1
+    },
   ];
   
   currentIndex = 0;
